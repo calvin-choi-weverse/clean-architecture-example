@@ -1,0 +1,10 @@
+GET http://localhost:8080/v1/api/products
+
+
+###
+POST http://localhost:8080/v1/api/products
+Content-Type: application/json
+
+{
+  "price": 400
+}
