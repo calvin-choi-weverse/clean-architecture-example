@@ -3,7 +3,7 @@ spring:
     hikari:
       driver-class-name: org.h2.Driver
       username: sa
-      jdbc-url: jdbc:h2:~/test;AUTO_SERVER=TRUE
+      jdbc-url: jdbc:h2:~/test;MODE=MYSQL;AUTO_SERVER=TRUE
   jpa:
     hibernate:
       ddl-auto: update
