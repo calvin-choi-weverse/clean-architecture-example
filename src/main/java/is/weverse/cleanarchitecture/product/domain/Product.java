@@ -1,6 +1,6 @@
 package is.weverse.cleanarchitecture.product.domain;
 
-import is.weverse.cleanarchitecture.product.application.port.out.ProductCommandPort;
+import is.weverse.cleanarchitecture.product.application.port.in.ProductCommandUseCase;
 
 public class Product {
 
@@ -16,8 +16,8 @@ public class Product {
         this.price = price;
     }
 
-    public void save(ProductCommandPort productCommandPort) {
-        Product product = productCommandPort.save(this);
+    public void save(ProductCommandUseCase productCommandUseCase) {
+        Product product = productCommandUseCase.save(this);
         this.id = product.id;
     }
 

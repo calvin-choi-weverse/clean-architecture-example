@@ -1,14 +1,14 @@
 package is.weverse.cleanarchitecture.product.adapter.out.jpa;
 
-import is.weverse.cleanarchitecture.product.application.port.out.ProductCommandPort;
-import is.weverse.cleanarchitecture.product.application.port.out.ProductQueryPort;
+import is.weverse.cleanarchitecture.product.application.port.out.ProductCommandOutPort;
+import is.weverse.cleanarchitecture.product.application.port.out.ProductQueryOutPort;
 import is.weverse.cleanarchitecture.product.domain.Product;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-class ProductJpaAdapter implements ProductCommandPort, ProductQueryPort {
+class ProductJpaAdapter implements ProductCommandOutPort, ProductQueryOutPort {
 
     private final ProductJpaRepository productJpaRepository;
 
